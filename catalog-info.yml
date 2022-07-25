@@ -13,19 +13,3 @@ metadata:
 spec:
   owner: demo-team
   domain: logistics
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: Test-services
-  title: Test Services
-  description: Testing
-  annotations:
-    backstage.io/techdocs-ref: dir:.
-  tags:
-    - Azure
-spec:
-  type: website
-  lifecycle: production
-  owner: demo-team
-  system: test-system
