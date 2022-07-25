@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test-system
+  description: Testing
+  tags:
+    - apigateway
+  links:
+  - url: https://www.google.com/
+    title: Beta - test Services
+    icon: location
+ 
+spec:
+  owner: demo-team
+  domain: logistics
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Test-services
+  title: Test Services
+  description: Testing
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - Azure
+spec:
+  type: website
+  lifecycle: production
+  owner: demo-team
+  system: test-system
